@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+body {
+    font-family: 'Odibee Sans', sans-serif;
+    margin: 0;
+    background-color: #CBCBCB;
+  
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #011f29;
+    padding: 10px 20px;
+    width: 100%;
+    
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted to space between brand and nav links */
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navbar .brand-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+}
+
+.brand-logo {
+    height: 40px; /* Adjust height as needed */
+    margin-right: 10px; /* Space between logo and text */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Animation Effect on Logo Hover */
+.brand-name:hover .brand-logo {
+    transform: scale(1.1) rotate(5deg); /* Scale and rotate the logo on hover */
+}
+
+.nav-links {
+    display: flex; /* Use flex to center the nav links */
+    justify-content: center; /* Center the nav links */
+    flex-grow: 1; /* Allow the nav links to grow and take available space */
+}
+
+.navbar ul li {
+    margin: 0 30px; /* Increased margin to add space between links */
+}
+
+.navbar ul li a {
+    color: #CBCBCB;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover Effect for Nav Links */
+.navbar ul li a:hover {
+    color: #FFFFFF;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    border-bottom: 2px solid #FFFFFF; /* Underline on hover */
+}
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #218838;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn:active {
+    background-color: #1e7e34;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+/* Styles for the modal */
+/* Styles for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with higher opacity for a gaming feel */
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #1c1c1c, #444444); /* Dark gradient background */
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #444;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px; /* Limit width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+/* .r1{
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f00;
+    
+} */
+.r1 {
+    background-color: #3498db; /* Background color */
+    color: white; /* Text color */
+    padding: 15px; /* Spacing around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+    font-size: 20px; /* Font size */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.r1:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.close {
+    color: #f00; /* Red color for close button */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000; /* Brighter red on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    color: #00ff00; /* Bright green for heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #ffffff; /* White label text */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #2d2d2d; /* Dark input background */
+    color: #ffffff; /* White text for inputs */
+}
+
+button {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green */
+}
+
+
+
+
+
+
+
+
+
+
+
+
